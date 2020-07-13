@@ -11,18 +11,35 @@
 	],
 	"activationEvents": [
 		"onView:nodeRepos",
-		"onCommand:githubTrending.helloWorld"
+		"onView:nodeUsers",
+		"onView:nodeLiked"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "githubTrending.helloWorld",
-				"title": "Hello World"
+				"command": "githubTrending.open",
+				"title": "打开"
+			},
+			{
+				"command": "githubTrending.like",
+				"title": "收藏",
+				"icon": {
+					"light": "resources/light/like.svg",
+					"dark": "resources/dark/like.svg"
+				}
+			},
+			{
+				"command": "githubTrending.unlike",
+				"title": "取消收藏",
+				"icon": {
+					"light": "resources/light/unlike.svg",
+					"dark": "resources/dark/unlike.svg"
+				}
 			},
 			{
 				"command": "nodeRepos.refreshEntry",
-				"title": "Refresh",
+				"title": "刷新",
 				"icon": {
 					"light": "resources/light/refresh.svg",
 					"dark": "resources/dark/refresh.svg"
@@ -30,7 +47,7 @@
 			},
 			{
 				"command": "nodeRepos.since",
-				"title": "Since",
+				"title": "时间段",
 				"icon": {
 					"light": "resources/light/since.svg",
 					"dark": "resources/dark/since.svg"
@@ -38,7 +55,7 @@
 			},
 			{
 				"command": "nodeRepos.language",
-				"title": "Language",
+				"title": "语言",
 				"icon": {
 					"light": "resources/light/language.svg",
 					"dark": "resources/dark/language.svg"
@@ -46,22 +63,42 @@
 			},
 			{
 				"command": "nodeRepos.spokenLanguage",
-				"title": "Spoken Language",
+				"title": "地区语言",
 				"icon": {
 					"light": "resources/light/spoken_language.svg",
 					"dark": "resources/dark/spoken_language.svg"
 				}
 			},
 			{
-				"command": "nodeRepos.view",
-				"title": "View"
+				"command": "nodeUsers.refreshEntry",
+				"title": "刷新",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
 			},
 			{
-				"command": "nodeRepos.addToFavorites",
-				"title": "Add To Favorites",
+				"command": "nodeUsers.since",
+				"title": "时间段",
 				"icon": {
-					"light": "resources/light/spoken_language.svg",
-					"dark": "resources/dark/spoken_language.svg"
+					"light": "resources/light/since.svg",
+					"dark": "resources/dark/since.svg"
+				}
+			},
+			{
+				"command": "nodeUsers.language",
+				"title": "语言",
+				"icon": {
+					"light": "resources/light/language.svg",
+					"dark": "resources/dark/language.svg"
+				}
+			},
+			{
+				"command": "nodeLiked.refreshEntry",
+				"title": "刷新",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
 				}
 			}
 		],
@@ -83,6 +120,10 @@
 				{
 					"id": "nodeUsers",
 					"name": "User-Tredding"
+				},
+				{
+					"id": "nodeLiked",
+					"name": "Liked"
 				}
 			]
 		},
@@ -107,12 +148,37 @@
 					"command": "nodeRepos.refreshEntry",
 					"when": "view == nodeRepos",
 					"group": "navigation@4"
+				},
+				{
+					"command": "nodeUsers.since",
+					"when": "view == nodeUsers",
+					"group": "navigation@1"
+				},
+				{
+					"command": "nodeUsers.language",
+					"when": "view == nodeUsers",
+					"group": "navigation@2"
+				},
+				{
+					"command": "nodeUsers.refreshEntry",
+					"when": "view == nodeUsers",
+					"group": "navigation@3"
+				},
+				{
+					"command": "nodeLiked.refreshEntry",
+					"when": "view == nodeLiked",
+					"group": "navigation@4"
 				}
 			],
 			"view/item/context": [
 				{
-					"command": "nodeRepos.addToFavorites",
-					"when": "viewItem == repo",
+					"command": "githubTrending.like",
+					"when": "viewItem == repo || viewItem == user",
+					"group": "inline"
+				},
+				{
+					"command": "githubTrending.unlike",
+					"when": "viewItem == liked",
 					"group": "inline"
 				}
 			]

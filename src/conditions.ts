@@ -1,7 +1,3 @@
-export const REPO_SINCE = 'REPO_SINCE';
-export const REPO_LANGUAGE = 'REPO_LANGUAGE';
-export const REPO_SPOKEN_LANGUAGE = 'REPO_SPOKEN_LANGUAGE';
-
 export const sinces = [
   '今日',
   '这周',
