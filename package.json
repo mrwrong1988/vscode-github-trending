@@ -19,11 +19,11 @@
 		"commands": [
 			{
 				"command": "githubTrending.open",
-				"title": "打开"
+				"title": "Open"
 			},
 			{
 				"command": "githubTrending.like",
-				"title": "收藏",
+				"title": "Like",
 				"icon": {
 					"light": "resources/light/like.svg",
 					"dark": "resources/dark/like.svg"
@@ -31,7 +31,7 @@
 			},
 			{
 				"command": "githubTrending.unlike",
-				"title": "取消收藏",
+				"title": "UnLike",
 				"icon": {
 					"light": "resources/light/unlike.svg",
 					"dark": "resources/dark/unlike.svg"
@@ -39,7 +39,7 @@
 			},
 			{
 				"command": "nodeRepos.refreshEntry",
-				"title": "刷新",
+				"title": "Refresh",
 				"icon": {
 					"light": "resources/light/refresh.svg",
 					"dark": "resources/dark/refresh.svg"
@@ -47,7 +47,7 @@
 			},
 			{
 				"command": "nodeRepos.since",
-				"title": "时间段",
+				"title": "Since",
 				"icon": {
 					"light": "resources/light/since.svg",
 					"dark": "resources/dark/since.svg"
@@ -55,7 +55,7 @@
 			},
 			{
 				"command": "nodeRepos.language",
-				"title": "语言",
+				"title": "Language",
 				"icon": {
 					"light": "resources/light/language.svg",
 					"dark": "resources/dark/language.svg"
@@ -63,7 +63,7 @@
 			},
 			{
 				"command": "nodeRepos.spokenLanguage",
-				"title": "地区语言",
+				"title": "Spoken Language",
 				"icon": {
 					"light": "resources/light/spoken_language.svg",
 					"dark": "resources/dark/spoken_language.svg"
@@ -71,7 +71,7 @@
 			},
 			{
 				"command": "nodeUsers.refreshEntry",
-				"title": "刷新",
+				"title": "Refresh",
 				"icon": {
 					"light": "resources/light/refresh.svg",
 					"dark": "resources/dark/refresh.svg"
@@ -79,7 +79,7 @@
 			},
 			{
 				"command": "nodeUsers.since",
-				"title": "时间段",
+				"title": "Since",
 				"icon": {
 					"light": "resources/light/since.svg",
 					"dark": "resources/dark/since.svg"
@@ -87,7 +87,7 @@
 			},
 			{
 				"command": "nodeUsers.language",
-				"title": "语言",
+				"title": "Language",
 				"icon": {
 					"light": "resources/light/language.svg",
 					"dark": "resources/dark/language.svg"
@@ -95,7 +95,7 @@
 			},
 			{
 				"command": "nodeLiked.refreshEntry",
-				"title": "刷新",
+				"title": "Refresh",
 				"icon": {
 					"light": "resources/light/refresh.svg",
 					"dark": "resources/dark/refresh.svg"

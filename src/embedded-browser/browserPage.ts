@@ -1,3 +1,4 @@
+import * as vscode from 'vscode';
 import { EventEmitter } from 'events';
 import Clipboard from './clipboard';
 var EventEmitterEnhancer = require('event-emitter-enhancer');
@@ -26,6 +27,9 @@ export default class BrowserPage extends EnhancedEventEmitter {
     console.log('► browserPage.send', action);
 
     switch (action) {
+      case 'Page.openInBrowser':
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(this.page.url()));
+        break;
       case 'Page.goForward':
         await this.page.goForward();
         break;
