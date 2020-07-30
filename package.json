@@ -3,7 +3,9 @@
 	"displayName": "Github Trending",
 	"description": "",
 	"version": "0.0.1",
-	"icon": "resources/logo.png",
+	"icon": "resources/trend.png",
+	"publisher": "mrwrong1988",
+	"repository": "https://github.com/mrwrong1988/vscode-github-trending",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -196,7 +198,7 @@
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
+		"@types/node": "^13.13.15",
 		"@types/node-fetch": "^2.5.7",
 		"@types/vscode": "^1.46.0",
 		"@typescript-eslint/eslint-plugin": "^2.30.0",
@@ -211,10 +213,12 @@
 		"amplitude": "^5.1.2",
 		"event-emitter-enhancer": "^2.0.0",
 		"eventemitter2": "^6.4.3",
+		"funcs-js": "^2.0.0",
 		"get-port": "^5.1.1",
-		"karma-chrome-launcher": "^3.1.0",
+		"karma-chrome-launcher": "^2.2.0",
 		"mixpanel": "^0.11.0",
 		"node-fetch": "^2.6.0",
+		"node-later": "^2.0.0",
 		"os-name": "^3.1.0",
 		"public-ip": "^4.0.1",
 		"puppeteer-core": "^5.0.0",
