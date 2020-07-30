@@ -3,6 +3,7 @@
 	"displayName": "Github Trending",
 	"description": "",
 	"version": "0.0.1",
+	"icon": "resources/logo.png",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
