@@ -220,7 +220,7 @@
 		"node-fetch": "^2.6.0",
 		"node-later": "^2.0.0",
 		"os-name": "^3.1.0",
-		"public-ip": "^4.0.1",
+		"public-ip": "^6.0.1",
 		"puppeteer-core": "^5.0.0",
 		"uuid": "^3.3.2",
 		"which-chrome": "^0.1.1"
